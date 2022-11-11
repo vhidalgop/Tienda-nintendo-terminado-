@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/custom.css" />
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/skeleton.css" />
+    </head>
+    <body>
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns">
+                        <img
+                            src="img/11cd48f641e4149e5dab50fe5a5964b50b52881b.gif"
+                            alt=""
+                            id="logo"
+                        />
+                    </div>
+                    <div class="two columns u-pull-right">
+                        <ul>
+                            <li class="submenu">
+                                <img src="img/cart.png" alt="" id="img-carro" />
+                                <div id="carro">
+                                    <table
+                                        id="lista-carrito"
+                                        class="u-full-width"
+                                    >
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a
+                                        href="#"
+                                        id="vaciar-carrito"
+                                        class="button u-full"
+                                        >Vaciar carro</a
+                                    >
+                                    <a
+                                        href="#"
+                                        type="buttom"
+                                        class="button u-full "
+                                        >Comprar</a
+                                    >
+                                    
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </header>
+        <div id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                            <h2>Lo mejor de nintendo</h2>
+                            <p>Todos los juegos de Nintendo ($60US)</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="barra">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>
+                            100 juegos en lista <br />
+                            Explora las nuevas novedades mas recientes
+                        </p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>
+                            accesorios para tu consola <br />
+                            Explora los nuevos accesorios mas recientes
+                        </p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>
+                            Cuentas primarias y secundarias <br />
+                            Seguridad ante todo
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="lista-juegos" class="container">
+            <h1 id="encabezado" class="E">Pedidos en linea</h1>
+
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/1.png" class="u-full-width"/>
+                        <div class="info-card">
+                            <h4>Pokemon Legends Arceus</h4>
+                            <p>Gamefreak</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$6200</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="1"
+                                >Agregar al carro</a
+                            >
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input sss"
+                                
+                                >ComprarAparte</a
+                            >
+                           
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/2.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>The Legend of Zelda Breath of the wild</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="2"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/3.jpeg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Hollow Knight</h4>
+                            <p>Team Cherry</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$800</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="3"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/4.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>
+                                Pokemon Diamante Brillante y Perla Reluciente
+                            </h4>
+                            <p>GameFreak</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$6200</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="4"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/5.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Monster Hunter Rise</h4>
+                            <p>Capcom</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$6200</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="5"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/6.jpeg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Metroid Dread</h4>
+                            <p>Team Cherry</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$6200</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="6"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/7.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Pokken Tournament DX</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5200</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="7"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/8.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Super Smash Bros Ultimate</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="8"
+                                >Agregar al carro</a
+                            
+                                
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/9.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Fire emblem Three Houses</h4>
+                            <p>Nintendo y Koei Tecmo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="9"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/10.jpeg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Super Mario Maker 2</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$6200</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="10"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/11.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Pokemon Espada y Escudo</h4>
+                            <p>GameFreak</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="11"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/12.jpg " class="u-full-width">
+                        <div class="info-card">
+                            <h4>Persona 5 Strikers </h4>
+                            <p>Koei Tecmo y Atlus</p>
+                            <p class="precio">$5000 <span class="u-pull-right"></span></p>
+                            <a href="#"
+                            class="u-full-width  button-primary button input agregar-carrito
+                            " id="12">Agregar al carro</a>
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+        
+                        </div>
+        
+                    </div>
+                </div>        
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img
+                            src="./img/LEGO-Star-Wars-Skywalker-Saga-specs.jpg"
+                            class="u-full-width"
+                        />
+                        <div class="info-card">
+                            <h4>LEGO® Star Wars™: The Skywalker Saga</h4>
+                            <p>TT Games</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$6200</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="13"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img
+                            src="./img/triangle-strategy-4.jpg"
+                            class="u-full-width"
+                        />
+                        <div class="info-card">
+                            <h4>TRIANGLE STRATEGY™</h4>
+                            <p>Square Enix</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$3000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="14"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/wario.jpg " class="u-full-width" />
+                        <div class="info-card">
+                            <h4>WarioWare™: Get It Together!</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="15"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/bravely.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>BRAVELY DEFAULT™ II</h4>
+                            <p>Square Enix</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$3000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="16"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img
+                            src="./img/lets-go-pikachu-lets-go-eevee-169.jpg"
+                            class="u-full-width"
+                        />
+                        <div class="info-card">
+                            <h4>Pokemon Lets Go Pikachu/Eevee</h4>
+                            <p>GameFreak</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="17"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/travis.jpg " class="u-full-width" />
+                        <div class="info-card">
+                            <h4>No More Heroes III</h4>
+                            <p>Grasshopper</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="18"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/kart.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Mario Kart 8 Deluxe</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="19"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/animal.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Animal Crossing™: New Horizons</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$5000</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="20"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img
+                            src="./img/splatoon2_gameplay_1.jpg "
+                            class="u-full-width"
+                        />
+                        <div class="info-card">
+                            <h4>Splatoon™ 2</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$4500</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="21"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/zelda.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>The Legend of Zelda™: Skyward Sword HD</h4>
+                            <p>Nintendo</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$6200</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="22"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/hades.png" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>Hades</h4>
+                            <p>Supergiant Games</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$800</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="23"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./img/scott.jpg" class="u-full-width" />
+                        <div class="info-card">
+                            <h4>
+                                Scott Pilgrim vs. The World™: The Game Complete
+                                Edition
+                            </h4>
+                            <p>Ubisoft</p>
+                            <p class="precio">
+                                <span class="u-pull-left">$800</span>
+                            </p>
+                            <a
+                                href="#"
+                                class="u-full-width button-primary button input agregar-carrito"
+                                data-id="24"
+                                >Agregar al carro</a
+                            >
+                            <a
+                            href="https://mpago.la/2n4bNj1"
+                            class="u-full-width button-primary button input sss"
+                            onclick="ComprarAparte()"
+                            >ComprarAparte</a
+                        >
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer" class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#"> Para negocios</a>
+                                <a class="enlace" href="#">
+                                    Unete a la tienda</a
+                                >
+                                <a class="enlace" href="#">
+                                    Aplicacion para celulares</a
+                                >
+                                <a class="enlace" href="#"> Favoritos</a>
+                            </nav>
+                        </div>
+                        <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#"> Quienes somos?</a>
+                                <a class="enlace" href="#"> Blog</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
