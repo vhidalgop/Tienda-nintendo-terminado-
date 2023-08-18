@@ -31,3 +31,5 @@ https://www.ubisoft.com/es-mx/game/scott-pilgrim-vs-the-world
   Link monto libre mercado pago:https://link.mercadopago.com.ar/viedemecha
   Pop up terminado falta linkear a la pagina principal y link mp
 10/08:creacion changelog readme
+18/08: SE CONECTO LA BASE DE DATOS 
+Se crea el formulario para registro
