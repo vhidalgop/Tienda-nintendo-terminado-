@@ -13,15 +13,8 @@ app.use(cors())
 
 
 
-app.post('/Crear_Usuario', controladores.Crear_Usuario)
+app.post('/Crear_Producto', controladores.Crear_Producto)
 
-app.post('/Obtener_Usuario', controladores.Obtener_Usuario)
-
-app.put('/Modificar_Usuario/:_id', controladores.Modificar_Usuario)
-
-app.get('/Obtener_Usuarios', controladores.Obtener_Usuarios)
-
-app.delete('/Borrar_Usuario/:id', controladores.Borrar_Usuarios)
 
 app.listen(puerto, () => {
     console.log("el servidor esta corriendo en el puerto " + puerto);
