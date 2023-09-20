@@ -13,8 +13,8 @@ app.use(cors())
 
 
 
-app.post('/Crear_Producto', controladores.Crear_Producto)
-
+app.post('/Crear_Producto', controladores.Crear_Producto);
+app.get('/Obtener_Stock', controladores.Obtner_Stock);
 
 app.listen(puerto, () => {
     console.log("el servidor esta corriendo en el puerto " + puerto);

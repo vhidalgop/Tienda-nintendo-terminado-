@@ -13,7 +13,7 @@ const ProductoSchema = new Schema({          //Esquema del documento
     nombre: { type: String, unique: true },
     Distruibidor: { type: String, },
     Precio: { type: String, },
-    Stock: { type: String, },
+    Stock: { type: Number, },
     link: { type: String, },
 })
 
@@ -38,7 +38,8 @@ controladores.Crear_Producto = async (req, res) => {
         producto.stock = stock;
         producto.link = link;
 
-        let insertar_usuario = await DB_coleccion.insertOne(producto);
+        let insertar_usuario1 = await DB_coleccion.insertOne(req.body);
+
         console.log("id del usuario recien creado " + insertar_usuario.insertedId);
         res.send({
             Creacion: true,
@@ -48,6 +49,10 @@ controladores.Crear_Producto = async (req, res) => {
         console.log("Ocurrio un error al crear un usuario" + error);
     }
 }
-
+controladores.Obtner_Stock = async (req, res) => {
+    let ObtenerStock = await DB_coleccion.find({}).toArray();
+    console.log(ObtenerStock);
+    res.send(ObtenerStock);
+}
 
 module.exports = controladores;
